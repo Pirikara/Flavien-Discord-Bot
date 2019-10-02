@@ -35,31 +35,26 @@ client.on('message', message => {
     // Feature 1: Thanks for your attention
     if (isFlavienTriggered && !wannaSeeRule && !wannaPauseFlavien && !messageContent.includes('fla le bg')) {
         commandName = 'insecure';
-        console.log('Feature 1: Thanks for your attention');
     }
 
     // Feature 2: Help / Doc
     else if (isFlavienTriggered && wannaSeeRule && !wannaPauseFlavien) {
         commandName = 'about';
-        console.log('Feature 2: Help / Doc');
     }
 
     // Feature 3: Batman!
     else if(messageContent.includes('batman') && !message.author.bot) {
         commandName = 'batman';
-        console.log('Feature 3: Batman!');
     }
 
     // Feature 4: Fla le bg
     else if(messageContent.includes('fla le bg') && !message.author.bot && !wannaPauseFlavien && !wannaSeeRule) {
         commandName = 'flaLeBg';
-        console.log('Feature 4: Fla le bg');
     }
 
     // Feature 5: Ta gueule Flavien! Met le bot en pause
     else if(isFlavienTriggered && !wannaSeeRule && wannaPauseFlavien && !message.author.bot) {
         commandName = 'taGueuleFlavien';
-        console.log('Feature 5: Ta gueule Flavien! Met le bot en pause');
     }
 
     // TODO Feature 6: Daily events
