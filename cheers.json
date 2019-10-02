@@ -3,24 +3,50 @@
         "Hey dudu tu peux m'aider pour un ticket stp ?",
         "Oh dudu on va courir Jeudi ?",
         "Si c'est pour me proposer d'aller manger à Garbejaire tu oublis **tout de suite**...",
+        "Je t'es déjà dis que je mangeais pas ce midi, je dois finir un truc ça me gave trop là.",
+        "C'est l'heure du Dudududu-**duel** !",
+        "Oh la table du fun, y'a un moment où ça bosse un peu ?",
+        "Oui Dudu dis moi",
         "Affirm!"
     ],
     "gwen": [
         "Ohh c'est gentil de penser à moi ma Gwennie :heart: .",
         "Bah voilà! Au moins Gwen m'ignore pas elle...",
         "Oh y'a Gwen qui me parle au calme! Elle a posée sa journée...",
+        "Tu vas au sport ce soir Gwennie ? ",
+        "Ouai mais stop en faite, y'a un bouffon qui me cause sur Teams, j'ai pas le temps pour toi là !",
+        "Tu me manque trop Gwennie... :frowning: ",
+        "Oui Gwennie, je peux t'aider ?",
         "Affirm!"
     ],
     "rafael": [
         "Oh le stagiaire il veut quoi là ?",
         "Raf il prend un peu trop la confiance...",
         "Baisse du regard toi le stagiaire !",
+        "Mon petit Rafi je peux pas causer, j'ai trop de taf...",
+        "Oh Raf quand est-ce que tu reprends le sport un peu ?",
+        "Si c'est pour faire un bot sur moi autant le faire bien parce que là sérieux ça fait 'tiep...",
+        "Qu'est tu veux mon petit Rafi ?",
         "Affirm!"
     ],
     "valerio": [
         "Oh Valerio t'en es où sur Clash of clan ?",
         "Je parle pas aux thugs...",
         "Ahahah C'est pour ça que t'es mon numéro 1 Valerio :wink: .",
+        "Valerio tu manges où ce midi ?",
+        "Hey Valerio après je vais peut être avoir besoin de toi pour un truc si t'as 5 min",
+        "Valerio t'as vu le trailer du prochain Marvel ?",
+        "Ouai Valerio tu veux quoi ?",
+        "Affirm!"
+    ],
+    "guillaume": [
+        "Guigui tu peux m'aider sur un ticket ? Ça me prend trop la tête là !",
+        "Putain nan y'a Guillaume...",
+        "Guillaume demain je fête mes 15 ans, tu m'offres quoi ? :D",
+        "Ah Guillaume! Je peux enfin parler avec les vrais :wink:",
+        "Ouai Guillaume bien ou quoi ?",
+        "Oh la table du fun, y'a un moment où ça bosse un peu ?",
+        "Oui Guillaume, je peux t'aider ?",
         "Affirm!"
     ]
 }

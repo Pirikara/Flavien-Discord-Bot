@@ -3,20 +3,22 @@ module.exports = {
 	cooldown: 5,
 	description: 'Donnez moi de l\'attention!',
 	execute(message) {
-		const { alexis, gwen, rafael, valerio } = require('../cheers.json');
+		const { alexis, gwen, rafael, valerio, guillaume } = require('../cheers.json');
 
-		const amountOfQuote = 4;
+		const amountOfQuote = 8;
 
 		const alexisQuotes = [];
 		const gwenQuotes = [];
 		const rafaelQuotes = [];
 		const valerioQuotes = [];
+		const guillaumeQuotes = [];
 
 		for (let i = 0; i < amountOfQuote; i++) {
 			alexisQuotes.push(alexis[i]);
 			gwenQuotes.push(gwen[i]);
 			rafaelQuotes.push(rafael[i]);
 			valerioQuotes.push(valerio[i]);
+			guillaumeQuotes.push(guillaume[i]);
 		}
 
 		// Generate a random number between 1 and the amount of quote
@@ -37,6 +39,10 @@ module.exports = {
 		// Valerio
 		else if(message.author.id == 621277816742477824) {
 			message.channel.send(`${valerioQuotes[randomQuote]}`);
+		}
+		// Guillaume
+		else if(message.author.id == 394146745086640133) {
+			message.channel.send(`${guillaumeQuotes[randomQuote]}`);
 		}
 	},
 };

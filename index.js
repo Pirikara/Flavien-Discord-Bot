@@ -30,7 +30,7 @@ client.on('message', message => {
     const messageContent = message.content.toLowerCase();
     const isFlavienTriggered = nicknames.some(nickname => messageContent.includes(nickname));
     const wannaSeeRule = messageContent.includes('about?') || messageContent.includes('about ?');
-    const wannaPauseFlavien = messageContent.includes('tg') || messageContent.includes('ta gueule');
+    const wannaPauseFlavien = messageContent.includes('tg') || messageContent.includes('ta gueule') || messageContent.includes('la ferme') || messageContent.includes('stop');
 
     // Feature 1: Thanks for your attention
     if (isFlavienTriggered && !wannaSeeRule && !wannaPauseFlavien && !messageContent.includes('fla le bg')) {
@@ -52,9 +52,9 @@ client.on('message', message => {
         commandName = 'flaLeBg';
     }
 
-    // Feature 5: Ta gueule Flavien! Met le bot en pause
+    // Feature 5: Met le bot en pause
     else if(isFlavienTriggered && !wannaSeeRule && wannaPauseFlavien && !message.author.bot) {
-        commandName = 'taGueuleFlavien';
+        commandName = 'pause';
     }
 
     // TODO Feature 6: Daily events

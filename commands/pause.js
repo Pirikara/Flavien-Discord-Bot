@@ -1,5 +1,5 @@
 module.exports = {
-	name: 'taGueuleFlavien',
+	name: 'pause',
 	cooldown: 20,
 	description: 'Désactive le bot',
 	execute(message) {
