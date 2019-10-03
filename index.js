@@ -30,7 +30,9 @@ client.on('message', message => {
     const messageContent = message.content.toLowerCase();
     const isFlavienTriggered = nicknames.some(nickname => messageContent.includes(nickname));
     const wannaSeeRule = messageContent.includes('about?') || messageContent.includes('about ?');
-    const wannaPauseFlavien = messageContent.includes('tg') || messageContent.includes('ta gueule') || messageContent.includes('la ferme') || messageContent.includes('stop');
+    const wannaPauseFlavien = messageContent.includes('tg') || messageContent.includes('ta gueule') || messageContent.includes('la ferme') || messageContent.includes('stop') || messageContent.includes('chut');
+    const flaIsBg = messageContent.includes('fla le bg');
+    const isBatmanTriggered = messageContent.includes('batman');
 
     // Feature 1: Thanks for your attention
     if (isFlavienTriggered && !wannaSeeRule && !wannaPauseFlavien && !messageContent.includes('fla le bg')) {
@@ -43,12 +45,12 @@ client.on('message', message => {
     }
 
     // Feature 3: Batman!
-    else if(messageContent.includes('batman') && !message.author.bot) {
+    else if(isBatmanTriggered && !message.author.bot) {
         commandName = 'batman';
     }
 
     // Feature 4: Fla le bg
-    else if(messageContent.includes('fla le bg') && !message.author.bot && !wannaPauseFlavien && !wannaSeeRule) {
+    else if(flaIsBg && !message.author.bot && !wannaPauseFlavien && !wannaSeeRule) {
         commandName = 'flaLeBg';
     }
 
