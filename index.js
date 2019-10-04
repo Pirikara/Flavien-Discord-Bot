@@ -25,6 +25,7 @@ client.once('ready', () => {
 
 client.on('message', message => {
 
+    // Init phase of command management
     let commandName = new String();
     const nicknames = ['flavien', 'fla', 'flafla', 'flapien', 'batou'];
     const messageContent = message.content.toLowerCase();
@@ -33,6 +34,11 @@ client.on('message', message => {
     const wannaPauseFlavien = messageContent.includes('tg') || messageContent.includes('ta gueule') || messageContent.includes('la ferme') || messageContent.includes('stop') || messageContent.includes('chut');
     const flaIsBg = messageContent.includes('fla le bg');
     const isBatmanTriggered = messageContent.includes('batman');
+
+    // Countdown for periodic event
+    // const timer = setInterval(function() {
+    //     message.channel.send('Y\'a person\'y m\'aime :frowning: ');
+    // }, 20 * 1000);
 
     // Feature 1: Thanks for your attention
     if (isFlavienTriggered && !wannaSeeRule && !wannaPauseFlavien && !messageContent.includes('fla le bg')) {
