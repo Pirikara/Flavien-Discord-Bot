@@ -2,7 +2,9 @@ const Discord = require('discord.js');
 const { token } = require('./config.json');
 const client = new Discord.Client();
 
+// Nutri Semaine Server
 const guildId = '614450504419901448';
+// ladresse Channel
 const channelId = '614450504419901450';
 
 client.login(token).then(() => {
