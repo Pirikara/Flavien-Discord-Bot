@@ -35,11 +35,6 @@ client.on('message', message => {
     const flaIsBg = messageContent.includes('fla le bg');
     const isBatmanTriggered = messageContent.includes('batman');
 
-    // Countdown for periodic event
-    // const timer = setInterval(function() {
-    //     message.channel.send('Y\'a person\'y m\'aime :frowning: ');
-    // }, 20 * 1000);
-
     // Feature 1: Thanks for your attention
     if (isFlavienTriggered && !wannaSeeRule && !wannaPauseFlavien && !messageContent.includes('fla le bg')) {
         commandName = 'insecure';
@@ -64,8 +59,6 @@ client.on('message', message => {
     else if(isFlavienTriggered && !wannaSeeRule && wannaPauseFlavien && !message.author.bot) {
         commandName = 'pause';
     }
-
-    // TODO Feature 6: Daily events
 
     // When incompatible Feature are used in the same message
     else if(isFlavienTriggered && wannaSeeRule && wannaPauseFlavien) {

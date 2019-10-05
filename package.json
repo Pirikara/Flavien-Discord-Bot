@@ -2,7 +2,7 @@
   "name": "flavien-discordbot",
   "version": "0.0.1",
   "description": "Y'a person'y m'aime :(",
-  "main": "index.js",
+  "main": "flavien.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
